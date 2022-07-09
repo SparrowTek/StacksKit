@@ -21,9 +21,7 @@ let package = Package(
         .target(
             name: "StacksKit",
             dependencies: [],
-            resources: [
-                .copy("Stacks.js/packages"),
-            ]),
+            resources: []),
         .testTarget(
             name: "StacksKitTests",
             dependencies: ["StacksKit"]),

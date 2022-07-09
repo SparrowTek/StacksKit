@@ -1,6 +1,5 @@
-public struct StacksKit {
-    public private(set) var text = "Hello, World!"
+import JavaScriptCore
 
-    public init() {
-    }
+public struct StacksKit {
+    
 }
