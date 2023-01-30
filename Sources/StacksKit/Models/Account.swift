@@ -5,7 +5,8 @@
 //  Created by Thomas Rademaker on 7/8/22.
 //
 
-struct Account: Codable {
+public struct Account: Codable, Hashable {
+    
     /// The private key used for STX payments
     let stxPrivateKey: String
     
@@ -26,4 +27,15 @@ struct Account: Codable {
     
     /// The index of this account in the user's wallet
     let index: Int
+    
+    #warning("This is for testing only")
+    public init(stxPrivateKey: String, dataPrivateKey: String, salt: String, username: String?, profile: Profile?, appsKey: String, index: Int) {
+        self.stxPrivateKey = stxPrivateKey
+        self.dataPrivateKey = dataPrivateKey
+        self.salt = salt
+        self.username = username
+        self.profile = profile
+        self.appsKey = appsKey
+        self.index = index
+    }
 }

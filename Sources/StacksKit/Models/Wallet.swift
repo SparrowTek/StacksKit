@@ -5,7 +5,7 @@
 //  Created by Thomas Rademaker on 7/8/22.
 //
 
-struct Wallet: Codable {
+public struct Wallet: Codable {
     /// Used when generating app private keys, which encrypt app-specific data
     let salt: String
     
